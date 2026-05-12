@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ghaida Sameer – Portfolio</title>
+
+  <!-- Google Fonts: Inter للنص العادي و Playfair Display للعناوين -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+
+  <!-- ملف التصميم -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER: شريط التنقل العلوي الثابت ===== -->
+  <header class="header" id="header">
+    <div class="header-inner">
+
+      <!-- الشعار -->
+      <div class="logo">Ghaida</div>
+
+      <!-- روابط التنقل (تظهر على الشاشات الكبيرة) -->
+      <nav class="nav" id="nav">
+        <a href="#home"    class="nav-link">Home</a>
+        <a href="#about"   class="nav-link">About</a>
+        <a href="#skills"  class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- زر Let's Talk -->
+      <a href="#contact" class="btn-talk">
+        <span class="dot dot-pink"></span> Let's Talk
+      </a>
+
+      <!-- زر القائمة للموبايل -->
+      <button class="menu-btn" id="menu-btn" aria-label="Open menu">🌸</button>
+    </div>
+  </header>
+
+
+  <!-- ===== HERO: القسم الرئيسي ===== -->
+  <section id="home" class="hero">
+
+    <!-- بطاقة عائمة يسار (تظهر على الشاشات الكبيرة) -->
+    <div class="float-card float-left">Where logic gets simple</div>
+
+    <!-- بطاقة عائمة يمين -->
+    <div class="float-card float-right">And ideas come to life</div>
+
+    <!-- شارة الترحيب -->
+    <div class="badge">
+      <span class="badge-emoji">🌸</span> Welcome to the portfolio
+    </div>
+
+    <!-- الاسم الكبير -->
+    <h1 class="hero-name">Ghaida Sameer</h1>
+
+    <!-- المسمى الوظيفي -->
+    <h2 class="hero-title">Software Engineering Student</h2>
+
+    <!-- وصف قصير -->
+    <p class="hero-desc">
+      Combining engineering logic with design thinking to build solutions that are both functional and meaningful. ✨
+    </p>
+
+    <!-- الأزرار -->
+    <div class="hero-btns">
+      <a href="#projects" class="btn-outline">
+        <span class="dot dot-pink"></span> View Projects
+      </a>
+      <!-- زر CV — ضعي ملف cv.pdf داخل assets/pdfs/ عند الجهوزية -->
+      <a href="assets/pdfs/cv.pdf" target="_blank" class="btn-outline btn-outline-teal">
+        <span class="dot dot-teal"></span> View CV
+      </a>
+    </div>
+  </section>
+
+
+  <!-- ===== TICKER: الشريط المتحرك الأخضر بين Hero وAbout ===== -->
+  <div class="ticker-bar">
+    <div class="ticker-content">
+      <!-- تُكرَّر الرموز 30 مرة بالتناوب لإعطاء تأثير اللانهاية -->
+      <span>✦</span><span>✿</span><span>✦</span><span>✿</span><span>✦</span>
+      <span>✿</span><span>✦</span><span>✿</span><span>✦</span><span>✿</span>
+      <span>✦</span><span>✿</span><span>✦</span><span>✿</span><span>✦</span>
+      <span>✿</span><span>✦</span><span>✿</span><span>✦</span><span>✿</span>
+      <span>✦</span><span>✿</span><span>✦</span><span>✿</span><span>✦</span>
+      <span>✿</span><span>✦</span><span>✿</span><span>✦</span><span>✿</span>
+      <!-- نسخة ثانية مطابقة حتى تعمل حركة اللانهاية بسلاسة -->
+      <span>✦</span><span>✿</span><span>✦</span><span>✿</span><span>✦</span>
+      <span>✿</span><span>✦</span><span>✿</span><span>✦</span><span>✿</span>
+      <span>✦</span><span>✿</span><span>✦</span><span>✿</span><span>✦</span>
+      <span>✿</span><span>✦</span><span>✿</span><span>✦</span><span>✿</span>
+      <span>✦</span><span>✿</span><span>✦</span><span>✿</span><span>✦</span>
+      <span>✿</span><span>✦</span><span>✿</span><span>✦</span><span>✿</span>
+    </div>
+  </div>
+
+  <!-- ===== ABOUT: قسم التعريف بالنفس ===== -->
+  <section id="about" class="about">
+    <div class="about-inner">
+
+      <!-- بطاقة العنوان المنحرفة -->
+      <div class="about-title-card">
+        <div class="about-title-card-arrow"></div>
+        <h3 class="about-title-card-text">Get To Know <br> Me Better</h3>
+      </div>
+
+      <!-- الصندوق الأزرق بالنص -->
+      <div class="about-box">
+        <p>
+          I'm a Software Engineering student who sees programming as a way to think and solve real-world
+          problems, not just write code. What motivates me most is the challenge of understanding a problem
+          deeply and turning abstract ideas into working solutions.
+        </p>
+        <p>
+          I enjoy learning in a practical and structured way — experimenting, applying concepts, and connecting
+          them to real life. My approach to problem-solving is rooted in mathematical and logical thinking —
+          I care about solutions that are not only functional, but thoughtfully designed.
+        </p>
+        <p class="about-highlight">
+          My long-term vision is to bridge software engineering and architectural design — creating solutions
+          that connect technology with the built environment.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ===== SKILLS: قسم المهارات ===== -->
+  <section id="skills" class="skills">
+    <div class="section-inner">
+
+      <!-- عنوان القسم -->
+      <div class="section-header">
+        <p class="section-label"><span class="label-icon">✦</span> MY TOOLKIT</p>
+        <h2 class="section-title">Skills</h2>
+        <p class="section-desc">A mix of technical skills and engineering foundations that shape how I think and build.</p>
+      </div>
+
+      <!-- شبكة بطاقات المهارات (4 بطاقات) -->
+      <div class="skills-grid">
+
+        <!-- بطاقة 1: البرمجة والتطوير -->
+        <div class="skill-card skill-pink">
+          <div class="skill-icon-box">
+            <!-- أيقونة الـ Terminal >_ -->
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="4 17 10 11 4 5"></polyline>
+              <line x1="12" y1="19" x2="20" y2="19"></line>
+            </svg>
+          </div>
+          <h3 class="skill-card-title">Programming <em>&amp;</em> Development</h3>
+          <ul class="skill-list">
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>Python (Basics)</li>
+            <li>REST APIs</li>
+          </ul>
+        </div>
+
+        <!-- بطاقة 2: الواجهة الأمامية والتصميم -->
+        <div class="skill-card skill-teal">
+          <div class="skill-icon-box">
+            <!-- أيقونة الشاشة Monitor -->
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <h3 class="skill-card-title">Frontend <em>&amp;</em> Design</h3>
+          <ul class="skill-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript (DOM)</li>
+            <li>Responsive Design</li>
+            <li>Figma</li>
+            <li>UX Basics</li>
+          </ul>
+        </div>
+
+        <!-- بطاقة 3: البيانات وحل المشاكل -->
+        <div class="skill-card skill-green">
+          <div class="skill-icon-box">
+            <!-- أيقونة قاعدة البيانات Database -->
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+              <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+              <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+            </svg>
+          </div>
+          <h3 class="skill-card-title">Data <em>&amp;</em> Problem Solving</h3>
+          <ul class="skill-list">
+            <li>SQL</li>
+            <li>MongoDB</li>
+            <li>Data Structures</li>
+            <li>Algorithm Design</li>
+            <li>Problem Solving</li>
+            <li>Logical &amp; Analytical Thinking</li>
+          </ul>
+        </div>
+
+        <!-- بطاقة 4: أسس هندسة البرمجيات -->
+        <div class="skill-card skill-yellow">
+          <div class="skill-icon-box">
+            <!-- أيقونة الشريحة CPU -->
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+              <rect x="9" y="9" width="6" height="6"></rect>
+              <line x1="9" y1="1" x2="9" y2="4"></line>
+              <line x1="15" y1="1" x2="15" y2="4"></line>
+              <line x1="9" y1="20" x2="9" y2="23"></line>
+              <line x1="15" y1="20" x2="15" y2="23"></line>
+              <line x1="20" y1="9" x2="23" y2="9"></line>
+              <line x1="20" y1="14" x2="23" y2="14"></line>
+              <line x1="1" y1="9" x2="4" y2="9"></line>
+              <line x1="1" y1="14" x2="4" y2="14"></line>
+            </svg>
+          </div>
+          <h3 class="skill-card-title">Software Eng. Foundations</h3>
+          <ul class="skill-list">
+            <li>Software Requirements</li>
+            <li>Documentation</li>
+            <li>Design Patterns</li>
+            <li>Agile Methodology</li>
+            <li>Git</li>
+            <li>GitHub</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== SELF-LEARNING: قسم التعلم الذاتي (انتقل هنا بعد Skills) ===== -->
+  <section id="self-learning" class="self-learning">
+    <div class="section-inner">
+
+      <!-- عنوان القسم -->
+      <div class="section-header">
+        <p class="section-label"><span class="label-icon">🌱</span> CONTINUOUS GROWTH</p>
+        <h2 class="section-title">Self-Learning</h2>
+      </div>
+
+      <!-- الكاروسيل -->
+      <div class="carousel-wrapper">
+
+        <!-- زر السهم الأيسر -->
+        <button class="carousel-arrow arrow-left sl-arrow" id="sl-prev" aria-label="Scroll left">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+
+        <!-- JavaScript سيضيف البطاقات هنا تلقائياً -->
+        <div class="carousel-track" id="sl-track"></div>
+
+        <!-- زر السهم الأيمن -->
+        <button class="carousel-arrow arrow-right sl-arrow" id="sl-next" aria-label="Scroll right">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== PROJECTS: عرض المشاريع (كاروسيل) ===== -->
+  <section id="projects" class="projects">
+    <div class="section-inner">
+
+      <!-- عنوان القسم -->
+      <div class="section-header">
+        <p class="section-label"><span class="label-icon">⚡</span> MY WORK</p>
+        <h2 class="section-title">Projects</h2>
+        <p class="section-desc">Each project highlights a challenge, the approach I took, and the solution I built.</p>
+      </div>
+
+      <!-- الكاروسيل -->
+      <div class="carousel-wrapper">
+
+        <!-- زر السهم الأيسر -->
+        <button class="carousel-arrow arrow-left" id="projects-prev" aria-label="Scroll left">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+
+        <!-- JavaScript سيضيف البطاقات هنا تلقائياً -->
+        <div class="carousel-track" id="projects-track"></div>
+
+        <!-- زر السهم الأيمن -->
+        <button class="carousel-arrow arrow-right" id="projects-next" aria-label="Scroll right">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== EDUCATION: قسم التعليم والشهادات ===== -->
+  <section id="education" class="education">
+    <div class="education-grid">
+
+      <!-- عمود التعليم -->
+      <div class="edu-col">
+        <div class="section-header">
+          <p class="section-label"><span class="label-icon">🎓</span> MY ACADEMICS</p>
+          <h2 class="section-title-sm">Education</h2>
+        </div>
+
+        <div class="edu-timeline">
+          <div class="edu-dot"></div>
+          <h3 class="edu-degree">Bachelor of Software Engineering</h3>
+          <p class="edu-institution">University of Jeddah — Jeddah, Saudi Arabia</p>
+          <p class="edu-status">Fourth-Year Student · 2021 – Present</p>
+
+          <!-- زر يفتح ملف PDF الموحد لشهادات التفوق -->
+          <div class="excellence-btns">
+            <a href="assets/pdfs/excellence.pdf" target="_blank" class="excellence-btn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+              </svg>
+              View Academic Excellence Certificates
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- عمود الشهادات -->
+      <div class="edu-col">
+        <div class="section-header">
+          <p class="section-label"><span class="label-icon">🏆</span> ACHIEVEMENTS</p>
+          <h2 class="section-title-sm">Certificates</h2>
+        </div>
+
+        <div class="certs-list">
+
+          <!-- شهادة 1: Agile -->
+          <div class="cert-card cert-pink">
+            <div>
+              <h3 class="cert-title">Agile Methodology</h3>
+              <p class="cert-desc">Fundamentals of Agile principles, iterative delivery, and collaborative project frameworks.</p>
+            </div>
+            <a href="assets/pdfs/agile-certificate.pdf" target="_blank" class="cert-link-btn" title="View Certificate">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+
+          <!-- شهادة 2: PM Life -->
+          <div class="cert-card cert-teal">
+            <div>
+              <h3 class="cert-title">Project Management</h3>
+              <p class="cert-desc">Core project management skills covering planning, lifecycle, and delivery best practices.</p>
+            </div>
+            <a href="assets/pdfs/pm-life-certificate.pdf" target="_blank" class="cert-link-btn" title="View Certificate">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+
+          <!-- شهادة 3: Java EE -->
+          <div class="cert-card cert-green">
+            <div>
+              <h3 class="cert-title">Java EE Application Development</h3>
+              <p class="cert-desc">Red Hat · AD183 — Enterprise application development using Java EE platform and standards.</p>
+            </div>
+            <a href="assets/pdfs/Application Development I Programming in Java EE (AD183 - RHA) - Ver. 7.0.pdf" target="_blank" class="cert-link-btn" title="View Certificate">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+
+          <!-- شهادة 4: Red Hat -->
+          <div class="cert-card cert-yellow">
+            <div>
+              <h3 class="cert-title">Red Hat System Administration I</h3>
+              <p class="cert-desc">Red Hat · RH124 — Linux system administration fundamentals and core operational skills.</p>
+            </div>
+            <a href="assets/pdfs/Red Hat System Administration I (RH124 - RHA) - Ver. 9.3.pdf" target="_blank" class="cert-link-btn" title="View Certificate">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ===== CONTACT: قسم التواصل ===== -->
+  <section id="contact" class="contact">
+    <div class="contact-inner">
+
+      <div class="badge">
+        <span class="badge-emoji">💌</span> GET IN TOUCH
+      </div>
+
+      <h2 class="contact-heading">
+        Let's build <br>
+        <span class="contact-heading-light">something great.</span>
+      </h2>
+
+      <!-- روابط التواصل -->
+      <div class="contact-links">
+        <a href="https://github.com/ghaidasameer17-dot" target="_blank" aria-label="GitHub" class="contact-icon-btn">
+          <!-- SVG أيقونة GitHub -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+        </a>
+
+        <!-- أيقونة LinkedIn -->
+        <a href="https://www.linkedin.com/in/غيداء-سمير-074846229" target="_blank" aria-label="LinkedIn" class="contact-icon-btn">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+
+        <a href="mailto:ghaidasameer17@gmail.com" aria-label="Email" class="contact-icon-btn">
+          <!-- SVG أيقونة البريد -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </a>
+      </div>
+
+      <p class="contact-desc">
+        Feel free to reach out via LinkedIn or email — I'd love to connect.
+        <span class="contact-note">The message below is just for sharing thoughts, advice, or kind words.</span>
+      </p>
+
+      <!-- نموذج رسالة (بدون backend - يعرض رسالة شكر فقط) -->
+      <form class="contact-form" id="contact-form">
+        <div class="form-group">
+          <textarea
+            id="feedback-text"
+            class="form-textarea"
+            placeholder="Any thoughts, advice, or feedback you'd like to share?"
+            required
+          ></textarea>
+        </div>
+
+        <!-- رسالة النجاح (مخفية في البداية) -->
+        <p class="form-success" id="form-success">Thank you! Your note is appreciated. 💕</p>
+
+        <div class="form-submit-wrapper">
+          <button type="submit" class="btn-outline">
+            <span class="dot dot-pink"></span> Leave a note
+          </button>
+        </div>
+
+        <p class="form-note">No email is required — messages here are informal and anonymous.</p>
+      </form>
+
+    </div>
+  </section>
+
+
+  <!-- ===== FOOTER: الذيل ===== -->
+  <footer class="footer">
+
+    <!-- شريط المتحرك بالرموز -->
+    <div class="marquee-bar">
+      <div class="marquee-content" id="marquee-content">
+        <!-- JavaScript سيملأ هذا تلقائياً -->
+      </div>
+    </div>
+
+    <!-- محتوى الذيل -->
+    <div class="footer-content">
+      <div class="logo footer-logo">Ghaida</div>
+
+      <div class="footer-links">
+        <a href="https://github.com/ghaidasameer17-dot" target="_blank" class="footer-icon-btn" aria-label="GitHub">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/غيداء-سمير-074846229" target="_blank" class="footer-icon-btn" aria-label="LinkedIn">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+        <a href="mailto:ghaidasameer17@gmail.com" class="footer-icon-btn" aria-label="Email">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </a>
+      </div>
+
+      <p class="footer-copy">© 2026 GHAIDA. INSPIRED BY EDITORIAL BEAUTY.</p>
+    </div>
+  </footer>
+
+
+  <!-- ملف JavaScript (يُحمَّل في النهاية بعد كل HTML) -->
+  <script src="script.js"></script>
+
+</body>
+</html>
