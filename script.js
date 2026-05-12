@@ -41,7 +41,7 @@ const PROJECTS = [
     links: {
       github: "https://github.com/ghaidasameer17-dot/Atelier.git",
       live:   "https://mukhaverse.github.io/Atelier/",
-      video:  "assets/videos/Atelier.mp4",   // ← ضعي الملف هنا عند الجهوزية
+      video:  "assets/videos/Atelier.mp4",  
       pdf:    "assets/pdfs/atelier.pdf"
     }
   },
@@ -60,8 +60,7 @@ const PROJECTS = [
     links: {
       github: "https://github.com/ghaidasameer17-dot/Sanad.git",
       pdf:    "assets/pdfs/Sanad.pdf"
-      // لا يوجد فيديو أو رابط موقع لهذا المشروع
-      // لذلك لن تظهر أزرارهم تلقائياً
+     
     }
   },
 
@@ -77,7 +76,6 @@ const PROJECTS = [
 
     links: {
       pdf: "assets/pdfs/software-architecture.pdf"
-      // لا يوجد GitHub أو فيديو أو رابط موقع
     }
   },
 
@@ -93,7 +91,6 @@ const PROJECTS = [
 
     links: {
       pdf: "assets/pdfs/WordPress-Testing.pdf"
-      // لا يوجد GitHub أو فيديو أو رابط موقع
     }
   },
 
@@ -109,7 +106,6 @@ const PROJECTS = [
 
     links: {
       pdf: "assets/pdfs/gemini.pdf"
-      // لا يوجد GitHub أو فيديو أو رابط موقع
     }
   },
 
@@ -126,7 +122,6 @@ const PROJECTS = [
     links: {
       github: "https://github.com/ghaidasameer17-dot/Architectural-Landmarks-Explorer.git",
       live:   "https://ghaidasameer17-dot.github.io/Architectural-Landmarks-Explorer/"
-      // لا يوجد فيديو أو PDF
     }
   }
 
@@ -480,26 +475,41 @@ function setupCarouselArrows() {
 
 function setupContactForm() {
 
-  const form    = document.getElementById("contact-form");
-  const success = document.getElementById("form-success");
+  const form     = document.getElementById("contact-form");
+  const success  = document.getElementById("form-success");
+  const error    = document.getElementById("form-error");
   const textarea = document.getElementById("feedback-text");
+  const btn      = form.querySelector("button[type='submit']");
 
-  form.addEventListener("submit", function(event) {
-    // event.preventDefault() يمنع الصفحة من إعادة التحميل عند الإرسال
+  form.addEventListener("submit", async function(event) {
     event.preventDefault();
 
-    if (!textarea.value.trim()) return; // تجاهل النموذج الفارغ
+    if (!textarea.value.trim()) return;
 
-    // إظهار رسالة النجاح
-    success.style.display = "block";
+    btn.disabled = true;
+    btn.textContent = "Sending…";
+    if (error) error.style.display = "none";
 
-    // مسح النص المكتوب
-    textarea.value = "";
+    try {
+      const response = await fetch("https://formspree.io/f/mnjwrqkn", {
+        method: "POST",
+        headers: { "Accept": "application/json" },
+        body: new FormData(form),
+      });
 
-    // إخفاء الرسالة بعد 4 ثواني
-    setTimeout(function() {
-      success.style.display = "none";
-    }, 4000);
+      if (response.ok) {
+        success.style.display = "block";
+        textarea.value = "";
+        setTimeout(function() { success.style.display = "none"; }, 4000);
+      } else {
+        if (error) error.style.display = "block";
+      }
+    } catch {
+      if (error) error.style.display = "block";
+    } finally {
+      btn.disabled = false;
+      btn.innerHTML = '<span class="dot dot-pink"></span> Leave a note';
+    }
   });
 }
 

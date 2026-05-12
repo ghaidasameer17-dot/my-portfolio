@@ -72,7 +72,6 @@
       <a href="#projects" class="btn-outline">
         <span class="dot dot-pink"></span> View Projects
       </a>
-      <!-- زر CV — ضعي ملف cv.pdf داخل assets/pdfs/ عند الجهوزية -->
       <a href="assets/pdfs/cv.pdf" target="_blank" class="btn-outline btn-outline-teal">
         <span class="dot dot-teal"></span> View CV
       </a>
@@ -462,18 +461,20 @@
       </p>
 
       <!-- نموذج رسالة (بدون backend - يعرض رسالة شكر فقط) -->
-      <form class="contact-form" id="contact-form">
+      <form class="contact-form" id="contact-form" action="https://formspree.io/f/mnjwrqkn" method="POST">
         <div class="form-group">
           <textarea
             id="feedback-text"
+            name="message"
             class="form-textarea"
             placeholder="Any thoughts, advice, or feedback you'd like to share?"
             required
-          ></textarea>
+         ></textarea>
         </div>
 
         <!-- رسالة النجاح (مخفية في البداية) -->
         <p class="form-success" id="form-success">Thank you! Your note is appreciated. 💕</p>
+        <p class="form-error" id="form-error" style="display:none;color:#e05c7a;">Something went wrong. Please try again.</p>
 
         <div class="form-submit-wrapper">
           <button type="submit" class="btn-outline">
